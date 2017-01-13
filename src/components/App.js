@@ -7,6 +7,7 @@ import moment from 'moment'
 
 import Sidebar from './Sidebar'
 import Canvas from './Canvas'
+import Visualize from './Visualize'
 
 class App extends Component {
 
@@ -33,7 +34,7 @@ class App extends Component {
                 data={ this.props.data }
                 app={ this }
                 actions={ this.props.actions } />
-        <Canvas store={ this.props.store }
+        <Visualize store={ this.props.store }
                 data={ this.props.data }
                 app={ this }
                 actions={ this.props.actions } />

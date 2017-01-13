@@ -21,10 +21,15 @@ pre {
 }
 
 svg {
-  display: none;
+  // display: none;
 }
 
 #canvas {
+  width: 70%;
+  float: left;
+}
+
+#visualize {
   width: 70%;
   float: left;
 }
