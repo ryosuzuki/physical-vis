@@ -30,10 +30,13 @@ class App extends Component {
     return (
       <div>
         <Sidebar store={ this.props.store }
-              data={ this.props.data }
-              app={ this }
-              actions={ this.props.actions } />
-        <Canvas />
+                data={ this.props.data }
+                app={ this }
+                actions={ this.props.actions } />
+        <Canvas store={ this.props.store }
+                data={ this.props.data }
+                app={ this }
+                actions={ this.props.actions } />
       </div>
     )
   }
