@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 class Sidebar extends Component {
 
   componentDidMount() {
+
   }
 
   render() {
     return (
       <div id="sidebar">
-        <h1>This is a side bar</h1>
+        <pre>{ JSON.stringify(this.props.data, null, 2) }</pre>
       </div>
     )
   }

@@ -14,13 +14,25 @@ class App extends Component {
     window.app = this
     window.moment = moment
     window._ = _
+
+    $.ajax({
+      method: 'GET',
+      url: '/data/stocks.json',
+      dataType: 'json',
+      contentType: 'application/json'
+    })
+    .done((data) => {
+      this.props.store.dispatch(actions.updateData(data))
+    })
   }
 
   render() {
     return (
       <div>
-        <h1>Hello World</h1>
-        <Sidebar />
+        <Sidebar store={ this.props.store }
+              data={ this.props.data }
+              app={ this }
+              actions={ this.props.actions } />
         <Canvas />
       </div>
     )

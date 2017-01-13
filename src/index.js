@@ -5,9 +5,7 @@ import configureStore from './redux/store'
 import { Provider } from 'react-redux'
 
 let initialStore = {
-  timeline: {},
-  current: undefined,
-  select: undefined
+  data: [],
 }
 
 let store = configureStore(initialStore)
