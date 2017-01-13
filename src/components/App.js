@@ -17,7 +17,7 @@ class App extends Component {
 
     $.ajax({
       method: 'GET',
-      url: '/data/stocks.json',
+      url: '/data/radial.json',
       dataType: 'json',
       contentType: 'application/json'
     })

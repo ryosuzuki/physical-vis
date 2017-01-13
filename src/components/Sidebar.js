@@ -6,6 +6,11 @@ class Sidebar extends Component {
 
   }
 
+  onChange(event) {
+    console.log('fwjeofjaowe')
+    this.value = event.target.value;
+  }
+
   render() {
     return (
       <div id="sidebar">
@@ -17,3 +22,14 @@ class Sidebar extends Component {
 }
 
 export default Sidebar
+
+// JSON.stringify(this.props.data, null, 2)
+/*
+        <form className="ui form" onSubmit={ this.onChange }>
+          <textarea
+            value={ JSON.stringify(this.props.data, null, 2) }
+            onChange={ this.onChange.bind(this) }
+          />
+        </form>
+
+ */
